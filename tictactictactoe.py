@@ -77,7 +77,7 @@ class TicTacTicTacToe:
 				else:
 					pass
 			else:
-				stdscr.addstr(key)
+				pass
 
 	def translate(self, y, x):
 		loc = [y, x]
