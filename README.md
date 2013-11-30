@@ -11,6 +11,6 @@ A (hopefully) simple project to introduce me to curses.
 
 	2. The other player must place their next mark somewhere in the corresponding subsection. The cursor will automatically move to the correct subsection for you.
 
-	3. If the subsection in which you would have to place your mark if either full or already won, you may place your mark anywhere on the board.
+	3. If the subsection in which you would have to place your mark is either full or already won, you may place your mark anywhere on the board.
 
-2. Play continues in this manner until either someone wins three consecutive vertical, horizontal, or diagonal subsections (essentially treating subsections like regular spaces from traditional Tic Tac Toe), making that player the winner, or until all subsections are finished or won but without anyone scoring three-in-a-row, which is considered a tie game.
+2. Play continues in this manner until either someone wins three consecutive vertical, horizontal, or diagonal subsections (essentially treating subsections like regular spaces from traditional Tic Tac Toe) making that player the winner, or until all subsections are finished or won but without anyone scoring three-in-a-row, which is considered a tie game.
