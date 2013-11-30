@@ -26,12 +26,7 @@ class TicTacTicTacToe:
 		self.marks = ["X", "O"]
 		self.player = 0  # this will be used as the index of the above list to place marks
 
-		# default these to a zero.
-		# change to appropriate player value (from above) when noventile is won.
-		self.captured_nontiles = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-
 	def main(self, stdscr):
-		# Clear screen
 		stdscr.clear()
 
 		self.setup(stdscr)
@@ -96,7 +91,6 @@ class TicTacTicTacToe:
 				pass
 
 	def nontile_is_completed(self, stdscr, nontile):
-		stdscr.addstr(30, 30, str(nontile))
 		for i in range(3):
 			if (
 				# horizontal
@@ -106,7 +100,7 @@ class TicTacTicTacToe:
 			):
 				return True
 
-		if (
+		if (  # diagonals
 			(stdscr.instr(nontile[0][0], nontile[0][1], 1) == stdscr.instr(nontile[4][0], nontile[4][1], 1) == stdscr.instr(nontile[8][0], nontile[8][1], 1) != b"-") or
 			(stdscr.instr(nontile[2][0], nontile[2][1], 1) == stdscr.instr(nontile[4][0], nontile[4][1], 1) == stdscr.instr(nontile[6][0], nontile[6][1], 1) != b"-")
 		):
