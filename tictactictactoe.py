@@ -35,6 +35,7 @@ class TicTacTicTacToe:
 			if key == "x":
 				break
 			elif key == "r":
+				self.setup(stdscr)
 				x = 2
 				y = 5
 				stdscr.move(y, x)
